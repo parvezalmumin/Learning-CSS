@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RGBA Color Example</title>
+  <style>
+    .half-transparent {
+      color: rgba(255, 0, 0, 0.5); /* Red text, 50% transparent */
+      background-color: #f0f0f0;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .fully-opaque {
+      color: rgba(255, 0, 0, 1); /* Fully red text, no transparency */
+      background-color: #f0f0f0;
+      font-size: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="half-transparent">This text is red with 50% transparency (rgba 0.5).</p>
+  <p class="fully-opaque">This text is fully red without transparency (rgba 1).</p>
+
+</body>
+</html>
