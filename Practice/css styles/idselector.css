@@ -1,0 +1,13 @@
+     /* ID selectors use the # symbol followed by the ID name */
+
+    #heading {
+      color: red;
+    }
+
+    #paragraph {
+      color: green;
+    }
+
+    #myButton {
+      color: blue;
+    }
