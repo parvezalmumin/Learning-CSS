@@ -1,0 +1,5 @@
+
+    /* Universal selector (*) targets ALL elements */
+    * {
+      color: navy; /* Changes the text color of everything */
+    }
