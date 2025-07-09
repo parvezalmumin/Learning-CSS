@@ -1,0 +1,19 @@
+
+  
+    /*Hexadecimal colors start with # and use 6 digits (RRGGBB)*/
+
+    p {
+      color: #FF0000;     /* Red */
+    }
+
+    h1 {
+      color: #00FF00;  /* Green */
+    }
+
+    h2 {
+      color: #0000FF;  /*Blue */
+    }
+
+    h3 {
+      color: #FFFF00; /* Yellow*/
+    }
