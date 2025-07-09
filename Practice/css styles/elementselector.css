@@ -1,0 +1,13 @@
+     /* Element selectors target specific HTML tags */
+
+    h1 {
+      color: red;
+    }
+
+    p {
+      color: green;
+    }
+
+    button {
+      color: blue;
+    }
