@@ -1,0 +1,17 @@
+ /* Class selectors use a dot (.) before the class name */
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.Same {
+  color: blueviolet;
+}
