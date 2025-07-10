@@ -1,0 +1,9 @@
+ div {
+    height: 400;
+    width: 400;
+    background-image: url("pahar.jpg");
+    background-size: cover;
+    color: white;
+   position: fixed;
+   right: 0px;
+ }
