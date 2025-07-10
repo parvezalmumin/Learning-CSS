@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Justify-Content Examples</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      height: 120px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      width: 80px;
+      height: 80px;
+      background-color: steelblue;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    /* Normal layout without flex */
+    .normal-container .box {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* Flex containers */
+    .flex-start {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .flex-end {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .space-evenly {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox: justify-content Comparison</h1>
+
+  <h2>🔹 Normal Inline Boxes (No Flex)</h2>
+  <div class="container normal-container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <h2>🔹 Flex: justify-content: flex-start</h2>
+  <div class="container flex-start">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <h2>🔹 Flex: justify-content: flex-end</h2>
+  <div class="container flex-end">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <h2>🔹 Flex: justify-content: center</h2>
+  <div class="container center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <h2>🔹 Flex: justify-content: space-evenly</h2>
+  <div class="container space-evenly">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+</body>
+</html>
