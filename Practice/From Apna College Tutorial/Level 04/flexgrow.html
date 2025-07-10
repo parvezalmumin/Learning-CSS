@@ -1,0 +1,36 @@
+ <!--flex grow-  It decides how much space a box takes when container has extra space.-->
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      width: 600px;
+      border: 2px solid black;
+      gap: 10px;
+    }
+
+    .box {
+      height: 80px;
+      background-color: seagreen;
+      color: white;
+      text-align: center;
+      line-height: 80px;
+    }
+
+    .box1 { flex-grow: 1; }  /* Takes 1 part of extra space */
+    .box2 { flex-grow: 2; }  /* Takes 2 parts (double size) */
+    .box3 { flex-grow: 1; }  /* Same as box1 */
+  </style>
+</head>
+<body>
+
+  <h2>flex-grow Example</h2>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+
+</body>
+</html>
