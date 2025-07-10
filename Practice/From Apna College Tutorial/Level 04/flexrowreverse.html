@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row-reverse; /* Items go right to left */
+      border: 2px solid black;
+      gap: 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>flex-direction: row-reverse</h2>
+  <div class="container">
+    <div class="box">1</div>  <!-- Appears last (on the right) -->
+    <div class="box">2</div>
+    <div class="box">3</div>  <!-- Appears first (on the left) -->
+  </div>
+
+</body>
+</html>
