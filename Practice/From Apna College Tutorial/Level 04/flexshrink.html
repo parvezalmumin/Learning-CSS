@@ -1,0 +1,36 @@
+ <!--flex-shrink –Controls how much a box shrinks when not enough space.-->
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      width: 300px; /* small container */
+      border: 2px solid black;
+      gap: 10px;
+    }
+
+    .box {
+      width: 200px; /* Each box wants 200px */
+      height: 80px;
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      line-height: 80px;
+    }
+
+    .box1 { flex-shrink: 1; }  /* Shrinks normally */
+    .box2 { flex-shrink: 3; }  /* Shrinks more aggressively */
+  </style>
+</head>
+<body>
+
+  <h2>flex-shrink Example</h2>
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+  </div>
+
+</body>
+</html>
