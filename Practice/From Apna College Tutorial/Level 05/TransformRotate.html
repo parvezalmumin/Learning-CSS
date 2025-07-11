@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Reaction Buttons</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 25px;
+      font-size: 24px;
+      border: none;
+      border-radius: 10px;
+    
+      transition: transform 0.5s ease;
+    }
+
+    /* Individual Button Colors */
+    .love {
+      background-color: crimson;
+      color: white;
+    }
+
+    .like {
+      background-color: aqua;
+      color: white;
+    }
+
+    .unlike {
+      background-color: darkslategrey;
+      color: white;
+    }
+
+    /* Rotate on Hover */
+    .love:hover {
+      transform: rotate(45deg);
+    }
+
+    .like:hover {
+      transform: rotate(90deg);
+    }
+
+    .unlike:hover {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn love">❤️ Love</button>
+  <button class="btn like">👍 Like</button>
+  <button class="btn unlike">👎 Unlike</button>
+
+</body>
+</html>
