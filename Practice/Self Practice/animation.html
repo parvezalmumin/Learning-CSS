@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Animation Example</title>
+  <style>
+    /* Define keyframes animation named "myName" */
+    @keyframes myName {
+      from {
+        font-size: 20px;
+        color: blue;
+      }
+      to {
+        font-size: 40px;
+        color: red;
+      }
+    }
+
+    /* Apply animation to the .animated-text element */
+    .animated-text {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      width: max-content;
+      margin: 100px auto;
+      text-align: center;
+
+      /* Animation properties */
+      animation-name: myName;                 /* Which animation to run */
+      animation-duration: 3s;                 /* How long it lasts */
+      animation-timing-function: ease-in-out; /* Animation speed curve */
+      animation-delay: 1s;                    /* Wait 1 second before start */
+      animation-iteration-count: 4;           /* Repeat 4 times */
+      animation-direction: alternate;         /* Alternate forward and backward */
+      /* This means the animation goes 20→40 font size, then 40→20, and repeats */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-text">Watch My Name Grow & Shrink</div>
+
+</body>
+</html>

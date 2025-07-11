@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Keyframes with 3 Steps</title>
+  <style>
+    @keyframes myName {
+      0% {
+        font-size: 20px;
+        color: black;
+      }
+      50% {
+        font-size: 30px;
+        color: purple;
+      }
+      100% {
+        font-size: 40px;
+        color: red;
+      }
+    }
+
+    .animated-text {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      width: max-content;
+      margin: 100px auto;
+      text-align: center;
+
+      animation-name: myName;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-text">Grow, Grow, Grow!</div>
+
+</body>
+</html>

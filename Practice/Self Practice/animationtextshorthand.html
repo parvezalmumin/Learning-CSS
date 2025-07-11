@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animation Shorthand Example</title>
+  <style>
+    @keyframes myName {
+      from {
+        font-size: 20px;
+        color: black;
+      }
+      to {
+        font-size: 40px;
+        color: tomato;
+      }
+    }
+
+    .animated-text {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      width: max-content;
+      margin: 100px auto;
+      text-align: center;
+
+      /* Shorthand animation */
+      animation: myName 2s linear 3s infinite normal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-text">Animating Text</div>
+
+</body>
+</html>
