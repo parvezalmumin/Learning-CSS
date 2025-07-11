@@ -1,0 +1,65 @@
+ <!-- 
+Q: Add a media query to implement the following:
+ - The color of a div changes to green for viewport width less than 300px
+ - The color of a div changes to pink for width between 300px & 400px
+ - The color of a div changes to red for width between 400px & 600px
+ - The color of a div changes to blue for width above 600px
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Color Box</title>
+  <style>
+    .box {
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      line-height: 200px;
+    }
+
+    /* Default color (optional) */
+    .box {
+      background-color: gray;
+    }
+
+    /* Less than 300px */
+    @media (max-width: 299px) {
+      .box {
+        background-color: green;
+      }
+    }
+
+    /* Between 300px and 400px */
+    @media (min-width: 300px) and (max-width: 399px) {
+      .box {
+        background-color: pink;
+        color: black;
+      }
+    }
+
+    /* Between 400px and 600px */
+    @media (min-width: 400px) and (max-width: 599px) {
+      .box {
+        background-color: red;
+      }
+    }
+
+    /* Above 600px */
+    @media (min-width: 600px) {
+      .box {
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Resize the screen to change my color!</div>
+
+</body>
+</html>
